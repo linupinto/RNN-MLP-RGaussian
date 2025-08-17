@@ -1,1 +1,1 @@
-
+Vanilla RNN is performed 
