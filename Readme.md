@@ -1,6 +1,6 @@
 # Vanilla RNN on UCI HAR Dataset
 
-## ✅ Description
+##  Description
 This repository contains a **Vanilla RNN implementation** trained on the **UCI HAR Dataset** using **Mini-Batch Stochastic Gradient Descent (SGD)**. The model performs **activity recognition** with six output classes corresponding to:
 
 - WALKING  
@@ -10,10 +10,10 @@ This repository contains a **Vanilla RNN implementation** trained on the **UCI H
 - STANDING  
 - LAYING
 
-## ✅Dataset
+## Dataset
 The details and download link for the dataset are provided in [Dataset_README.md](Dataset_README.md).
 
-## ✅ Key Features
+##  Key Features
 - Vanilla RNN with **arbitrary number of hidden layers**  
 - Six-class output  
 - Implemented with custom activation functions:  
