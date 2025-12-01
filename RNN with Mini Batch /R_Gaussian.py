@@ -12,7 +12,7 @@ import seaborn as sns
 import tracemalloc
 
 base_path=r"C:\Users\HP\Desktop\D folder\RNN\RNN pgm\output_rgauss"
-tracemalloc.start()  # ✅ START memory tracking
+tracemalloc.start()  #  START memory tracking
 
 # import data using pandas
 path=r"C:\Users\HP\Desktop\D folder\RNN\RNN pgm\HAR_RNN_ready.csv"
@@ -113,7 +113,7 @@ def softmax(Z):
     e_Z = np.exp(Z - np.max(Z, axis=1, keepdims=True))
     return e_Z / np.sum(e_Z, axis=1, keepdims=True)
    
-#✅--------------- Forward Propagation ------------------------
+#--------------- Forward Propagation ------------------------
 
 act= {}
 output={}
@@ -157,7 +157,7 @@ def compute_cross_entropy(predictions, Y_hot):
     return np.mean(loss_per_sample)
 
 
-#✅----------- BACKPROPAGATION-----------------
+#----------- BACKPROPAGATION-----------------
 grads={}
 for l in range(1, L+1):  # for hidden layers
     grads[f'dWxh{l}'] = np.zeros_like(params[f'Wxh{l}'])
@@ -383,7 +383,7 @@ ax.tick_params(axis='both', which='major', labelsize=13)
 plt.savefig(f"{base_path}\\confmat.jpeg", dpi =300)
 plt.show()
 
-# ✅ MEMORY REPORT
+# MEMORY REPORT
 current, peak = tracemalloc.get_traced_memory()
 print(f"\n🧠 Current memory usage: {current / 10**6:.2f} MB")
 print(f"🚀 Peak memory usage:    {peak / 10**6:.2f} MB")
